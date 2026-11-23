@@ -1,3 +1,6 @@
+{% extends "filmes/base.html" %}
+
+{% block conteudo %}
 <h1>Novo filme</h1>
 
 <form action="{% url 'salvar_novo' %}" method="post">
@@ -10,3 +13,4 @@
 </form>
 
 <a href="{% url 'lista' %}">Voltar</a>
+{% endblock %}

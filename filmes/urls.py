@@ -3,6 +3,7 @@ from . import views
 
 urlpatterns = [
     path("", views.lista, name="lista"),
+    path("lista_alt/", views.lista, name="lista_alt"),
     # novas rotas nos passos 5, 6 e 7
     path("novo/", views.novo, name="novo"),
     path("novo/salvar/", views.salvar_novo,
@@ -13,5 +14,7 @@ urlpatterns = [
         name="salvar_edicao"),
     path("<int:id>/excluir/", views.excluir,
         name="excluir"),
+
+        path("tema/", views.alterar_tema, name="alterar_tema"),
 
 ]

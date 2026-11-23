@@ -1,0 +1,13 @@
+body.dia {
+    background: #ffffff;
+    color: #111111;
+}
+
+body.noite {
+    background: #121212;
+    color: #eeeeee;
+}
+
+body.noite a {
+    color: #8ab4f8;
+}   
